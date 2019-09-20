@@ -8,10 +8,11 @@ public class DataHelper {
 
 	public List<Integer> makeDataList(){
 		List<Integer> data = new ArrayList<>();
-		final  int size = 50000;
+		final  int size = 1000;
 		Random random = new Random();
 		for(int i=0;i<size;i++) {
-			int number =random.nextInt();
+		int number =random.nextInt();
+//	for bucket sort		int number=(int)(Math.random()*100);
 			data.add(number);
 		}
 		return data;

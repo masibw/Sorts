@@ -11,8 +11,9 @@ public class Main {
 			Quick quick = new Quick();
 			Merge merge=new Merge();
 			Select select=new Select();
+			Bucket bucket=new Bucket();
 			long start = System.currentTimeMillis();
-			select.selectSort(data);
+			bucket.bucketSort(data);
 			long end = System.currentTimeMillis();
 			dataHelper.printDatas(data);
 			System.out.println((end-start)+"ms");
